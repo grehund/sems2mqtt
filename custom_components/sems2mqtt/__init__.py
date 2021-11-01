@@ -152,7 +152,7 @@ async def async_setup(hass, config):
 
         async def call(url, payload):
             token = '{"version":"","client":"web","language":"en"}'
-            global_url = 'https://eu.semsportal.com/api/'
+            global_url = 'https://www.semsportal.com/api/'
             base_url = global_url
             for i in range(1, 4):
                 try:
