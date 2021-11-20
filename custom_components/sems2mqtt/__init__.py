@@ -306,7 +306,6 @@ async def async_setup(hass, config):
                 'icon':'mdi:current-ac',
                 'state_topic':'sems/sensors',
                 'state_class': STATE_CLASS_MEASUREMENT,
-                'device_class': None,
                 'unique_id':'sems_grid_frequency_sensor',
                     'device': create_device(data['type'])
             }
@@ -372,7 +371,6 @@ async def async_setup(hass, config):
                 'icon':'mdi:medical-bag',
                 'state_topic':'sems/sensors',
                 'state_class': STATE_CLASS_MEASUREMENT,
-                'device_class': None,
                 'unique_id':'sems_battery_soh_sensor',
                     'device': create_device(data['type'])
             }
