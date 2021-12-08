@@ -34,8 +34,11 @@ from homeassistant.components.sensor import (
     SensorDeviceClass,
 )
 from homeassistant.const import (
-    CONF_PASSWORD, CONF_USERNAME, 
-    CONF_SCAN_INTERVAL, EVENT_HOMEASSISTANT_STOP)
+    CONF_PASSWORD,
+    CONF_SCAN_INTERVAL,
+    CONF_USERNAME, 
+    EVENT_HOMEASSISTANT_STOP
+)
 from homeassistant.helpers.event import async_track_time_interval
 import homeassistant.helpers.config_validation as cv
 from homeassistant.helpers.entity import Entity
