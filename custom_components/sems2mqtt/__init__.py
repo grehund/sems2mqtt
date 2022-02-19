@@ -318,7 +318,7 @@ async def async_setup(hass, config):
             }
             payload_dc_current_str_1 = {
                 'name':'sems_str_1_current',
-                'unit_of_meas':'VDC',
+                'unit_of_meas':'IDC',
                 'value_template':'{{ value_json.dc_current_str_1 }}',
                 'icon':'mdi:current-dc',
                 'state_topic':'sems/sensors',
@@ -340,7 +340,7 @@ async def async_setup(hass, config):
             }
             payload_dc_current_str_2 = {
                 'name':'sems_str_2_current',
-                'unit_of_meas':'VDC',
+                'unit_of_meas':'IDC',
                 'value_template':'{{ value_json.dc_current_str_2 }}',
                 'icon':'mdi:current-dc',
                 'state_topic':'sems/sensors',
