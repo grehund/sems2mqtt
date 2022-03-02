@@ -17,6 +17,7 @@ sems2mqtt:
   scan_interval: 150 (optional, default is 300 seconds, keep to 300 seconds or less!)
 """
 
+import asyncio
 import json
 import logging
 import time
@@ -180,7 +181,7 @@ async def async_setup(hass, config):
                         token = json.dumps(data['data'])
                 except await hass.async_add_executor_job(issueException) as exp:
                     _LOGGER.warning(exp)
-                time.sleep((2*i) ** 2)
+                await asyncio.sleep((2*i) ** 2)
             else:
                 _LOGGER.error("Failed to obtain data from the SEMS API")
                 return {}
