@@ -276,7 +276,7 @@ async def async_setup(hass, config):
             }
             payload_grid_voltage = {
                 'name':'sems_grid_voltage',
-                'unit_of_meas':'VAC',
+                'unit_of_meas':'V',
                 'value_template':'{{ value_json.grid_voltage }}',
                 'icon':'mdi:current-ac',
                 'state_topic':'sems/sensors',
@@ -287,7 +287,7 @@ async def async_setup(hass, config):
             }
             payload_grid_current = {
                 'name':'sems_grid_current',
-                'unit_of_meas':'IAC',
+                'unit_of_meas':'A',
                 'value_template':'{{ value_json.grid_current }}',
                 'icon':'mdi:current-ac',
                 'state_topic':'sems/sensors',
@@ -308,7 +308,7 @@ async def async_setup(hass, config):
             }
             payload_dc_voltage_str_1 = {
                 'name':'sems_str_1_voltage',
-                'unit_of_meas':'VDC',
+                'unit_of_meas':'V',
                 'value_template':'{{ value_json.dc_voltage_str_1 }}',
                 'icon':'mdi:current-dc',
                 'state_topic':'sems/sensors',
@@ -319,7 +319,7 @@ async def async_setup(hass, config):
             }
             payload_dc_current_str_1 = {
                 'name':'sems_str_1_current',
-                'unit_of_meas':'IDC',
+                'unit_of_meas':'A',
                 'value_template':'{{ value_json.dc_current_str_1 }}',
                 'icon':'mdi:current-dc',
                 'state_topic':'sems/sensors',
@@ -330,7 +330,7 @@ async def async_setup(hass, config):
             }
             payload_dc_voltage_str_2 = {
                 'name':'sems_str_2_voltage',
-                'unit_of_meas':'VDC',
+                'unit_of_meas':'V',
                 'value_template':'{{ value_json.dc_voltage_str_2 }}',
                 'icon':'mdi:current-dc',
                 'state_topic':'sems/sensors',
@@ -341,7 +341,7 @@ async def async_setup(hass, config):
             }
             payload_dc_current_str_2 = {
                 'name':'sems_str_2_current',
-                'unit_of_meas':'IDC',
+                'unit_of_meas':'A',
                 'value_template':'{{ value_json.dc_current_str_2 }}',
                 'icon':'mdi:current-dc',
                 'state_topic':'sems/sensors',
